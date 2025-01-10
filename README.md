@@ -1,59 +1,29 @@
-# SwaAngularDemo
+# SWA Angular Demo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+This project demonstrates how to build a Single Page Application (SPA) using Angular and deploy it to Azure Static Web Apps. It was pretty much created by following the following two tutroials:
 
-## Development server
+- [Angular SWA](https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-web-framework?tabs=bash&pivots=angular)
+- [Add Auth](https://learn.microsoft.com/en-us/azure/static-web-apps/authentication-authorization?tabs=angular&pivots=programming-language-javascript)
+- [Add Azure Function](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript)
 
-To start a local development server, run:
+# Deploy to Azure
 
-```bash
-ng serve
+```
+npx swa deploy --env production
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Run locally
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+That will run at `http://localhost:4200/`
 
-```bash
-ng generate --help
+or
+
+```
+npx swa start
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+That will run at `http://localhost:4280/`
