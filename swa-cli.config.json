@@ -3,6 +3,7 @@
   "configurations": {
     "azure-static-with-functions": {
       "appLocation": ".",
+      "apiLocation": "api",
       "outputLocation": "dist/swa-angular-demo/browser",
       "appBuildCommand": "npm run build",
       "run": "npm start",
